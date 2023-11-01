@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsManage_WinForm", "StudentsManage_WinForm\StudentsManage_WinForm.csproj", "{1AEB1E60-AEF5-41CF-9C17-74887FE2F58E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsManage_Funcs", "StudentsManage_Funcs\StudentsManage_Funcs.csproj", "{5D621C06-9775-459E-A242-8699C3CFEB8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AEB1E60-AEF5-41CF-9C17-74887FE2F58E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEB1E60-AEF5-41CF-9C17-74887FE2F58E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEB1E60-AEF5-41CF-9C17-74887FE2F58E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEB1E60-AEF5-41CF-9C17-74887FE2F58E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D621C06-9775-459E-A242-8699C3CFEB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D621C06-9775-459E-A242-8699C3CFEB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D621C06-9775-459E-A242-8699C3CFEB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D621C06-9775-459E-A242-8699C3CFEB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5776A751-2308-4F28-9139-F51EF6765872}
+	EndGlobalSection
+EndGlobal
