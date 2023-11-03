@@ -73,6 +73,7 @@ namespace StudentsManage_WinForm
                     bindingSourceStu.DataSource = q6;
                     break;
                 default:
+                    DataRefresh();
                     break;
             }
 
@@ -146,7 +147,6 @@ namespace StudentsManage_WinForm
             List<string> rowId = new List<string>();
             for (int i = 0; i < dgv.Rows.Count; i++)
             {
-
                 if ((bool)dgv.Rows[i].Cells[0].EditedFormattedValue == true)
                 {
                     rowId.Add(dgv.Rows[i].Cells[1].Value.ToString());
@@ -289,6 +289,7 @@ namespace StudentsManage_WinForm
                 PrintLog(new Log("增加", "学校", service.PrintSchool(sch)));
             };
             schoolForm.ShowDialog();
+            DataRefresh();
         }
 
         private void buttonUpdSch_Click(object sender, EventArgs e)
@@ -317,6 +318,7 @@ namespace StudentsManage_WinForm
                     PrintLog(new Log("修改", "学校", "new: " + service.PrintSchool(sch)));
                 };
                 schoolForm.ShowDialog();
+                DataRefresh();
             });
         }
 
@@ -333,6 +335,7 @@ namespace StudentsManage_WinForm
                 PrintLog(new Log("增加", "班级", "name = " + cs.class_name));
             };
             schoolForm.ShowDialog();
+            DataRefresh();
         }
 
         private void buttonUpdClass_Click(object sender, EventArgs e)
@@ -361,6 +364,7 @@ namespace StudentsManage_WinForm
                     PrintLog(new Log("修改", "学校", "new: " + cs.class_name));
                 };
                 schoolForm.ShowDialog();
+                DataRefresh();
             });
         }
 
@@ -373,6 +377,7 @@ namespace StudentsManage_WinForm
                 PrintLog(new Log("增加", "学生", service.PrintStudent(stu)));
             };
             studentForm.ShowDialog();
+            DataRefresh();
         }
 
         private void buttonUpdStu_Click(object sender, EventArgs e)
@@ -396,6 +401,7 @@ namespace StudentsManage_WinForm
                     PrintLog(new Log("修改", "学生", "new: " + service.PrintStudent(stu)));
                 };
                 studentForm.ShowDialog();
+                DataRefresh();
             });
         }
 
